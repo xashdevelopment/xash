@@ -956,6 +956,7 @@ void CL_DrawHUD( int state )
 		CL_DrawCrosshair ();
 		CL_DrawCenterPrint ();
 		clgame.dllFuncs.pfnRedraw( cl.time, cl.intermission );
+		ESP_Redraw( cl.time, cl.intermission );
 		if( cl.intermission ) CL_DrawScreenFade ();
 		break;
 	case CL_PAUSED:
@@ -963,6 +964,7 @@ void CL_DrawHUD( int state )
 		CL_DrawCrosshair ();
 		CL_DrawCenterPrint ();
 		clgame.dllFuncs.pfnRedraw( cl.time, cl.intermission );
+		ESP_Redraw( cl.time, cl.intermission );
 		if( showpause.value )
 		{
 			if( !cls.pauseIcon )

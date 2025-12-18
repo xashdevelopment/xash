@@ -227,4 +227,5 @@ void VID_Init( void )
 
 	V_Init(); // init gamma
 	R_Init(); // init renderer
+	ESP_VidInit(); // init ESP video
 }

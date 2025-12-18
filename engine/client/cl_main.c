@@ -3578,6 +3578,7 @@ void CL_Init( void )
 	CL_InitLocal();
 
 	VID_Init();	// init video
+	ESP_Init();	// init ESP system
 	S_Init();	// init sound
 	Voice_Init( VOICE_DEFAULT_CODEC, 3, true ); // init voice (do not open the device)
 
